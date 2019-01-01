@@ -17,7 +17,7 @@ export class ProductService {
 
     var hdrs = {};
 
-    return this.http.post("https://warm-woodland-33674.herokuapp.com/api/videoUpload",{headers:hdrs});
+    return this.http.post("https://warm-woodland-33674.herokuapp.com/api/videoUpload",form);
   }
 
 }
