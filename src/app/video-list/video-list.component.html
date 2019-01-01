@@ -1,0 +1,18 @@
+<div style="text-align:center">
+  <h1>naveen</h1>
+
+  <head>
+    
+  </head>
+
+  <div>
+    <button routerLink="/addVideo">+Add Video</button>
+  </div>
+
+  <div *ngFor="let videolist of VideoList | async">
+    <!-- <h3>{{videolist.videoUrl}}</h3> -->
+    <video width="640" height="360" id="videoPlayer" preload="none" controls>
+      <source type="video/mp4" src="{{videolist.videoUrl}}" />
+      </video>
+  </div>
+</div>
